@@ -7,6 +7,12 @@ app.get('/health',(req,res)=>{
     res.send("Yep working");
 })
 
+app.get('message',(req,res)=>{
+    res.json({
+        "name": "juno"
+    });
+})
+
 app.listen(port,()=>{
     console.log(`Server running on port ${port}`);
 })
