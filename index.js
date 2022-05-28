@@ -7,6 +7,10 @@ app.get('/health',(req,res)=>{
     res.send("Yep working");
 })
 
+app.get('/',(req,res)=>{
+    res.send("Default");
+})
+
 app.get('/message',(req,res)=>{
     res.json({
         "name": "juno"
